@@ -3,46 +3,50 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Konstruct</title>
+	<title>Olha Sashchuk</title>
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 	<div class="head">
-		<a class="head__logo" href="#">
-			<img src="images/projeco-logo.svg" alt="Konstruct" width="102" height="23">
-		</a>
-		<div>
-			<h1 class="head__title">partner with konstruct</h1>
-			<p class="head__title-text">An award-winning construction management firm</p>
+		<video class="head__video" autoplay muted loop preload="auto">
+			<source src="video/video_bg.mp4" type="video/mp4">
+		</video>
+		<div class="head__container">
+			<div class="head__title-text">
+				<p>"Programming is the art of telling a computer what to do." — Donald Knuth</p>
+			</div>
+			<div>
+				<h1 class="head__title">OLHA SASHCHUK</h1>
+				<p class="head__title-text">FRONT-END DEVELOPER</p>
+			</div>
+			<a class="head__link" href="#header">scroll down</a>
 		</div>
-		<a class="head__link" href="#header">scroll down</a>
+		
 	</div>
 	<div class="wrapper">
 		<div class="container">
-			<header class="header__container header" id="header">
-				<a class="header__logo-black" href="#">
-					<img src="images/projeco-logo-black.svg" alt="Konstruct" width="102" height="23">
-				</a>
+			<header class="header__container header c-site-header" id="header">
+				<a class="header__nav-link" href="#">OLHA SASHCHUK</a>
 				<div class="header__box-burger">
 					<span></span>
 				</div>
-				<nav class="header__nav">
+				<nav class="header__nav" aria-label="Main Site Links">
 					<div class="header__nav-close"></div>
 					<ul class="header__nav-list">
 						<li class="header__nav-item">
 							<a class="header__nav-link" href="#">home</a>
 						</li>
 						<li class="header__nav-item">
-							<a class="header__nav-link" href="#ourstory">about</a>
+							<a class="header__nav-link" href="#aboutme">about me</a>
 						</li>
 						<li class="header__nav-item">
-							<a class="header__nav-link" href="#services">services</a>
+							<a class="header__nav-link" href="#courses">courses and certificates</a>
 						</li>
 						<li class="header__nav-item">
-							<a class="header__nav-link" href="#projects">projects</a>
+							<a class="header__nav-link" href="#projects">my projects</a>
 						</li>
 						<li class="header__nav-item">
-							<a class="header__nav-link" href="#contact">contact us</a>
+							<a class="header__nav-link" href="#contact">contact me</a>
 						</li>
 					</ul>
 				</nav>
@@ -50,95 +54,137 @@
 		</div>
 	</div>
 	<main>
-		<section class="ourstory" id="ourstory">
+		<section class="aboutme" id="aboutme">
 			<div class="container">
-				<div class="ourstory__subtitle subtitle">
-					<h2 class="subtitle-text">our story</h2>
+				<div class="subtitle">
+					<h2 class="subtitle-text">about me</h2>
 					<span></span>
 				</div>
-				<div class="ourstory__inner">
-					<div class="ourstory__inner-item">
-						<h2 class="ourstory__inner-title">Founded in 2011 by John Mathew Smith, <a href="#">Konstruct</a> has become the number one construction management firm</h2>
-						<p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
-						</p>
+				<div class="aboutme__inner">
+					<div class="aboutme__inner-item-img">
+						<img src="images/foto.jpg" alt="foto" width="315" height="500">
 					</div>
-					<ul class="ourstory__inner-cards">
-						<li class="ourstory__inner-card">
-							<p>we plan</p>
+					<div class="aboutme__inner-item">
+						<h2 class="aboutme__inner-title">Welcome to my digital space!</h2>
+						<p class="text">I am a beginner IT specialist with expertise in Front-End Development.</p> 
+						<p class="text">My journey started at Hillel IT School in Ukraine in 2022, where I learned about Quality Assurance. Later, I explored testing theory at Brainnest in Germany.</p>
+						<p class="text">As part of the study of tested software, I got interested in Front-End Development. In 2023 this leading me to the ReDi School of Digital Integration (Denmark), where I successfully finished the course “Introduction to Front-End Development”. There, I learned the basics of JavaScript, HTML, and CSS.</p>
+						<p class="text">Wanting to learn more, I joined an advanced Front-End Development course at Hillel IT School. I studied a variety of topics, including JavaScript, React, Redux, Node.js, MongoDB, Git, AJAX, and JQuery.</p>
+						<p class="text">Before my technical journey, I worked as an Independent Consultant, orchestrating the creation of investment funds on the Ukrainian stock market. My consultancy ventures spanned various sectors, including construction, agriculture, finance, insurance, and innovative technologies. I provided legal support, reorganized entities, and ensured the highest standards of quality control. I also led the Corporate Department at LLC ASSET MANAGEMENT COMPANY "ELLIOTT," where I managed teams and provided legal support for investment projects. </p>
+						<p class="text">Follow along with me as I continue to learn and grow in the exciting world of technology!</p>							
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="courses" id="courses">
+			<div class="container">
+				<div class="subtitle">
+					<h2 class="subtitle-text">courses and certificates</h2>
+					<span></span>
+				</div>
+				<div class="courses__slider">
+					<span class="courses__slider-prev js--slider__prev"></span>
+					<ul class="courses__wrapper js--slider__list">
+						<li class="courses__slide current">
+							<div class="courses__image">
+								<img class="courses__img" src="images/certificate_front-end.png" alt="Front-End" width="1154" height="815">
+							</div>
+							<div class="courses__inner">
+								<h2 class="courses__inner-title">Course Front-End</h2>
+								<a href="https://ithillel.ua/" class="courses__inner-name">Hillel IT School, Ukraine</a>
+								<p class="courses__inner-date">June 2023 – present</p>
+								<ul class="courses__inner-descripcion">
+									<h3>Learning technologies:</h3>
+									<li>JavaScript</li>
+									<li>React</li>
+									<li>Redux</li>
+									<li>Node.js</li>
+									<li>MongoDB</li>
+									<li>Git</li>
+									<li>AJAX</li>
+									<li>JQuery</li>
+								</ul>
+							</div>
 						</li>
-						<li class="ourstory__inner-card">
-							<p>we manage</p>
+						<li class="courses__slide">
+							<div class="courses__image">
+								<img class="courses__imgvertical" src="images/certificate_redi.png" alt="Front-End" width="580" height="862">
+							</div>
+							<div class="courses__inner">
+								<h2 class="courses__inner-title">Introduction to Front-End Development</h2>
+								<a href="https://www.redi-school.org/redi-school-copenhagen" class="courses__inner-name">ReDi School of Digital Integration, Denmark</a>
+								<p class="courses__inner-date">March 2023 – Lune 2023</p>
+								<ul class="courses__inner-descripcion">
+									<h3>Learning technologies:</h3>
+									<li>JavaScript</li>
+									<li>HTML</li>
+									<li>CSS</li>
+								</ul>
+							</div>
 						</li>
-						<li class="ourstory__inner-card">
-							<p>we build</p>
+						<li class="courses__slide">
+							<div class="courses__image">
+								<img class="courses__img" src="images/brainnest.png" alt="Quality Assurance" width="1182" height="913">
+							</div>
+							<div class="courses__inner">
+								<h2 class="courses__inner-title">Quality Assurance</h2>
+								<a href="https://www.brainnest.consulting/" class="courses__inner-name">Brainnest, Germany</a>
+								<p class="courses__inner-date">January 2023 – February 2023</p>
+								<ul class="courses__inner-descripcion">
+									<h3>Learning technologies:</h3>
+									<li>Fundamental knowledge of testing theory</li>
+									<li>Creating test documentation</li>
+									<li>Static and dynamic analysis of QA technical documentation</li>
+									<li>MySQL</li>
+									<li>UNIX</li>
+								</ul>
+							</div>
+						</li>
+						<li class="courses__slide">
+							<div class="courses__image">
+								<img class="courses__img" src="images/certificate_qa.png" alt="Quality Assurance" width="1154" height="815">
+							</div>
+							<div class="courses__inner">
+								<h2 class="courses__inner-title">Quality Assurance Manual</h2>
+								<a href="https://ithillel.ua/" class="courses__inner-name">Hillel IT School, Ukraine</a>
+								<p class="courses__inner-date">June 2022 – October 2022</p>
+								<ul class="courses__inner-descripcion">
+									<h3>Learning technologies:</h3>
+									<li>Testing theory</li>
+									<li>Software development methodologies (Agile, Waterfall, V-models)</li>
+									<li>Desktop/Web/Mobile application testing</li>
+									<li>MySQL</li>
+									<li>Jira</li>
+									<li>API testing (SOAP, REST, JSON, HTTP/HTTPS)</li>
+									<li>Used tools: Postman, SoapUI, Katalon, Jmeter, Charles</li>
+								</ul>
+							</div>
 						</li>
 					</ul>
+					<span class="courses__slider-next js--slider__next"></span>
 				</div>
 			</div>
 		</section>
-		<section class="capability">
+		<section class="myprojects" id="projects">
 			<div class="container">
-				<div class="capability__inner">
-					<div class="capability__subtitle subtitle">
-						<h2 class="subtitle-text">our capabilities</h2>
+					<div class="subtitle">
+						<h2 class="subtitle-text">my projects</h2>
 						<span></span>
 					</div>
-					<div class="capability__inner-item">
-						<p class="capability__text text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, ex assumenda, aspernatur quidem, est</p>
-						<a class="capability__link" href="#footer" id="services">all services</a>
+					<div class="myprojects__inner">Go to my<a href="https://github.com/olhasashchuk" class="myprojects__inner-name">GitHub</a></div>
+					<div class="myprojects__video">
+						<iframe  width="560" height="315" src="https://www.youtube.com/embed/8QmihFSeTac?si=tOXJCoSjSdEcYvgf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 					</div>
-				</div>
-				<ul class="capability__list" id="projects">
-					<li class="capability__item">
-						<a class="capability__item-link" href="#">
-							<img src="images/proj.png" alt="project" width="68" height="75">
-						</a>
-						<h2 class="capability__item-title">project and construction management</h2>
-						<p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum nulla illo eius similique. Harum iusto ex distinctio quibusdam molestias magni aliquid labore</p>
-					</li>
-					<li class="capability__item">
-						<a class="capability__item-link" href="#">
-							<img src="images/struct.png" alt="struct" width="68" height="75">
-						</a>
-						<h2 class="capability__item-title">structure audit and maintenance</h2>
-						<p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum nulla illo eius similique. Harum iusto ex distinctio quibusdam molestias magni aliquid labore</p>
-					</li>
-					<li class="capability__item">
-						<a class="capability__item-link" href="#">
-							<img src="images/factory.png" alt="factory" width="68" height="75">
-						</a>
-						<h2 class="capability__item-title">factory construction and modeling</h2>
-						<p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum nulla illo eius similique. Harum iusto ex distinctio quibusdam molestias magni aliquid labore</p>
-					</li>
-				</ul>
-			</div>
-		</section>
-		<section class="touch">
-			<div class="touch__inner container">
-				<h2 class="touch__inner-subtitle">Want to build something amazing?</h2>
-				<a class="touch__inner-link" href="#footer">get in touch</a>
 			</div>	
 		</section>
 	</main>
-	<footer class="footer">
+	<footer class="footer c-site-footer">
 		<div class="container">
-			<div class="footer__signup">
-				<h2 class="footer__signup-title">Newsletter Signup</h2>
-				<div class="footer__signup-inner">
-					<input class="footer__signup-input" type="email" placeholder="test@youremail.com" name="e-mail" required>
-					<button type="submit" class="footer__signup-btn">signup</button>
-				</div>
-			</div>
+			
 			<div class="footer__body">
+				
 				<div class="footer__inner">
-					<h3 class="footer__inner-title">company</h3>
-					<a class="footer__logo" href="#">
-						<img src="images/projeco-logo.svg" alt="Konstruct" width="102" height="23">
-					</a>					
-					<p class="footer__text text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, rem autem necessitatibus saepe soluta et. Repellat optio perspiciatis, non, officiis, eius maxime iure dignissimos dolore sunt ipsum ad ea voluptatem.</p>
-				</div>
-				<div class="footer__inner footer__inner--lists">
-					<ul class="footer__inner-list">
+					<ul>
 						<li class="footer__inner-item">
 							<h3 class="footer__inner-title">links</h3>
 						</li>
@@ -146,46 +192,28 @@
 							<a class="footer__inner-link" href="#">home</a>
 						</li>
 						<li class="footer__inner-item">
-							<a class="footer__inner-link" href="#ourstory">about</a>
+							<a class="footer__inner-link" href="#aboutme">about me</a>
 						</li>
 						<li class="footer__inner-item">
-							<a class="footer__inner-link" href="#services">services</a>
+							<a class="footer__inner-link" href="#courses">courses and certificates</a>
 						</li>
 						<li class="footer__inner-item">
-							<a class="footer__inner-link" href="#projects">projects</a>
+							<a class="footer__inner-link" href="#projects">my projects</a>
 						</li>
 						<li class="footer__inner-item">
-							<a class="footer__inner-link" href="#contact">contact us</a>
-						</li>
-					</ul>
-					<ul class="footer__inner-list">
-						<li class="footer__inner-item">
-							<a class="footer__inner-link" href="#">faq</a>
-						</li>
-						<li class="footer__inner-item">
-							<a class="footer__inner-link" href="#">terms</a>
-						</li>
-						<li class="footer__inner-item">
-							<a class="footer__inner-link" href="#">careers</a>
-						</li>
-					</ul>
-					<ul class="footer__inner-list">
-						<li class="footer__inner-item">
-							<a class="footer__inner-link" href="#">blog</a>
-						</li>
-						<li class="footer__inner-item">
-							<a class="footer__inner-link" href="#">partners</a>
-						</li>
-						<li class="footer__inner-item">
-							<a class="footer__inner-link" href="#">news</a>
+							<a class="footer__inner-link" href="#contact">contact me</a>
 						</li>
 					</ul>
 				</div>
 				<div class="footer__inner">
-					<h3 class="footer__inner-title" id="contact">contact us</h3>
-					<address class="footer__address">213 Baker Street,Oriel City Kounty, 7000 KNW, Country Name</address>
-					<a class="footer__phone" href="tel:+239942334022">+23 994 233 4022</a>
-					<a class="footer__mail" href="mailto:info@konstruct.com">info@konstruct.com</a>
+					<ul>
+						<li><h3 class="footer__inner-title" id="contact">contact me</h3></li>
+						<li><address class="footer__address">Frederiksberg, 2000, Denmark</address></li>
+						<li><a class="footer__phone" href="tel:+4593889161">+45 93 88 91 61</a></li>
+						<li><a class="footer__mail" href="mailto:olha.sashchuk@gmail.com">olha.sashchuk@gmail.com</a></li>
+						<li><a class="footer__link" href="https://github.com/olhasashchuk">GitHub</a></li>
+						<li><a class="footer__link" href="https://www.linkedin.com/in/olha-sashchuk-0a428623a">linkedIn</a></li>
+					</ul>
 				</div>
 			</div>
 		</div>

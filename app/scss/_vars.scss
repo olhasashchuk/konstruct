@@ -1,6 +1,5 @@
 $accent-color: #00A4E5;
 $hover-color: #006CCF;
-$bg-color: #00A4E5;
 $text-color: #48555B;
 $basic-white: #ffffff;
 $separator-color: #E6E6E6; 
@@ -29,7 +28,6 @@ $breakpoint-xxl: 1920px;
 }
 
 @mixin text-link {
-   color: $basic-white;
    text-decoration: none;
    cursor: pointer;
 }

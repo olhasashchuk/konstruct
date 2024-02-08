@@ -55,6 +55,7 @@ main {
    color: $text-color;
    font-size: 12px;
    line-height: 1.6;
+   padding-bottom: 5px;
 
    @media screen and (min-width: $breakpoint-md) {
       font-size: 14px;
@@ -64,7 +65,13 @@ main {
 .subtitle {
    display: flex;
    flex-flow: column;
-
+   align-items: center;
+   padding-bottom: 30px;
+   
+   @media screen and (min-width: $breakpoint-md) {
+   padding-bottom: 60px;
+   }
+   
    span {
       margin-top: 10px;
       width: 50px;
